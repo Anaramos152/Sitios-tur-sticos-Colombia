@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turismo Colombia</title>
+<link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+
+<!-- FONDO ANIMADO -->
+<div class="background-blobs">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Colombia, lo mejor del turismo regional para ti</h1>
+    <button class="btn-explorar">Explorar destinos</button>
+
+    <div class="carousel">
+        <div class="carousel-track">
+            <img src="https://picsum.photos/400/250?1">
+            <img src="https://picsum.photos/400/250?2">
+            <img src="https://picsum.photos/400/250?3">
+            <img src="https://picsum.photos/400/250?4">
+            <img src="https://picsum.photos/400/250?5">
+            <img src="https://picsum.photos/400/250?6">
+        </div>
+    </div>
+</section>
+
+<section class="narrativa reveal">
+    <div class="decoracion"></div>
+    <div class="texto">
+        <h2>Descubre la magia de cada rincón</h2>
+        <p>
+            Colombia es un país lleno de contrastes, naturaleza exuberante,
+            cultura vibrante y tradiciones únicas. Desde las montañas cafeteras
+            hasta las playas del Caribe, cada región guarda una historia
+            esperando ser descubierta.
+        </p>
+    </div>
+</section>
+
+<section class="stats reveal">
+    <div class="stat">
+        <h2>32</h2>
+        <p>Departamentos</p>
+    </div>
+    <div class="stat">
+        <h2>1000+</h2>
+        <p>Destinos turísticos</p>
+    </div>
+    <div class="stat">
+        <h2>365</h2>
+        <p>Días para viajar</p>
+    </div>
+</section>
+
+<footer>
+    <h3>Contáctanos</h3>
+    <p>📧 turismo@colombia.com</p>
+    <p>📞 +57 300 000 0000</p>
+    <p>📍 Colombia</p>
+</footer>
+
+<nav class="navbar">
+    <a href="#">Inicio</a>
+    <a href="#">Destinos</a>
+    <a href="#">Experiencias</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+    reveals.forEach(el => {
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
+        if(elementTop < windowHeight - 100){
+            el.classList.add("active");
+        }
+    });
+});
+</script>
+
+</body>
+</html>
