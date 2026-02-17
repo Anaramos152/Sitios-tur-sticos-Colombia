@@ -11,10 +11,6 @@ body{
     overflow-x:hidden;
 }
 
-/* ======================= */
-/* FONDO ANIMADO */
-/* ======================= */
-
 .background-blobs{
     position:fixed;
     width:100%;
@@ -60,10 +56,6 @@ body{
     to{transform:translateY(-40px);}
 }
 
-/* ======================= */
-/* HERO */
-/* ======================= */
-
 .hero{
     padding:4rem 2rem;
     text-align:center;
@@ -98,10 +90,6 @@ body{
     transform:translateY(-5px);
     box-shadow:0 20px 40px rgba(165,56,96,0.6);
 }
-
-/* ======================= */
-/* CAROUSEL */
-/* ======================= */
 
 .carousel{
     width:100%;
@@ -156,10 +144,6 @@ body{
     animation-play-state:paused;
 }
 
-/* ======================= */
-/* NARRATIVA */
-/* ======================= */
-
 .narrativa{
     padding:6rem 2rem;
     background:linear-gradient(135deg,#ffa5ab,#da627d);
@@ -170,10 +154,6 @@ body{
 .narrativa h2{
     margin-bottom:1rem;
 }
-
-/* ======================= */
-/* STATS */
-/* ======================= */
 
 .stats{
     display:flex;
@@ -192,10 +172,6 @@ body{
     font-weight:bold;
 }
 
-/* ======================= */
-/* FOOTER */
-/* ======================= */
-
 footer{
     background:#450920;
     color:#f0dbbd;
@@ -203,10 +179,6 @@ footer{
     padding:3rem 2rem;
     margin-bottom:130px;
 }
-
-/* ======================= */
-/* NAVBAR */
-/* ======================= */
 
 .navbar{
     position:fixed;
@@ -229,10 +201,6 @@ footer{
     font-weight:bold;
 }
 
-/* ======================= */
-/* REVEAL */
-/* ======================= */
-
 .reveal{
     opacity:0;
     transform:translateY(40px);
@@ -243,10 +211,6 @@ footer{
     opacity:1;
     transform:translateY(0);
 }
-
-/* ======================= */
-/* RESPONSIVE */
-/* ======================= */
 
 @media(max-width:768px){
 
