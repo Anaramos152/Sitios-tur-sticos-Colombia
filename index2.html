@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viaja con M-Ana</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/styles2.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <h2 class="logo">Viaja con <span>M-Ana</span></h2>
+        <nav>
+          <a href="#hero">Inicio</a>
+          <a href="#regiones">Regiones</a>
+          <a href="#precios">Paquetes</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero">
+      <div class="slide active">
+        <h1>Descubre Cartagena</h1>
+        <p>Historia, mar y cultura caribeña.</p>
+      </div>
+      <div class="slide">
+        <h1>Eje Cafetero</h1>
+        <p>Montañas verdes y aroma a café.</p>
+      </div>
+      <div class="slide">
+        <h1>Nuquí</h1>
+        <p>Avistamiento mágico de ballenas.</p>
+      </div>
+      <div class="slide">
+        <h1>Caño Cristales</h1>
+        <p>El río de los cinco colores.</p>
+      </div>
+      <div class="slide">
+        <h1>Amazonas</h1>
+        <p>Explora la selva más biodiversa del mundo.</p>
+      </div>
+    </section>
+
+    <section id="regiones" class="container">
+      <h2>Regiones de Colombia</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Caribe</h3>
+          <p>Cartagena de Indias</p>
+        </div>
+        <div class="card">
+          <h3>Andina</h3>
+          <p>Eje Cafetero</p>
+        </div>
+        <div class="card">
+          <h3>Pacífica</h3>
+          <p>Nuquí - Ballenas</p>
+        </div>
+        <div class="card">
+          <h3>Orinoquía</h3>
+          <p>Caño Cristales</p>
+        </div>
+        <div class="card">
+          <h3>Amazonía</h3>
+          <p>Leticia y Río Amazonas</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="precios" class="container">
+      <h2>Paquetes Turísticos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Incluye</th>
+            <th>Precio</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Económico</td>
+            <td>Hotel 3★ + Tours básicos</td>
+            <td>$1.200.000</td>
+            <td><button>Reservar</button></td>
+          </tr>
+          <tr>
+            <td>Premium</td>
+            <td>Hotel 4★ + Tours + Transporte</td>
+            <td>$2.500.000</td>
+            <td><button>Reservar</button></td>
+          </tr>
+          <tr>
+            <td>VIP</td>
+            <td>Hotel 5★ + Experiencia completa</td>
+            <td>$4.800.000</td>
+            <td><button>Reservar</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p>© 2026 Viaja con M-Ana | Turismo en Colombia</p>
+    </footer>
+
+    <script>
+      let slides = document.querySelectorAll(".slide");
+      let index = 0;
+
+      function showSlide() {
+        slides.forEach((slide) => slide.classList.remove("active"));
+        slides[index].classList.add("active");
+        index = (index + 1) % slides.length;
+      }
+
+      setInterval(showSlide, 4000);
+    </script>
+  </body>
+</html>
