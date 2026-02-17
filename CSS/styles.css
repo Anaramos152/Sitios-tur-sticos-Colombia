@@ -137,7 +137,7 @@ body{
 }
 
 .carousel-track img:hover{
-    transform:scale(1.1) translateZ(520px);
+    transform:scale(1) translateZ(520px);
 }
 
 .carousel:hover .carousel-track{
