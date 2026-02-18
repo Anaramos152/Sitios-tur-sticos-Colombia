@@ -1,14 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./CSS/styles3.css">
+    <title>Inicia sesión con nosotros</title>
+    <link rel="stylesheet" href="./css/styles3.css">
 </head>
 <body>
-    <div class="container">Inicio de sesion</div>
-    <div class="container">Registro</div>
-    
+
+<header>
+    <h1>Inicia sesión con nosotros</h1>
+    <p>
+        Aquí podrás iniciar sesión para que tengas más acceso a nuestros productos,
+        descuentos y reservas.
+    </p>
+</header>
+
+<section class="contenedor">
+
+    <div class="card">
+        <h2>Inicio de sesión</h2>
+        <form>
+            <input type="text" placeholder="Nombre de usuario o correo" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+    </div>
+
+    <div class="card">
+        <h2>Registro</h2>
+        <form>
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="text" placeholder="Documento de identidad" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="tel" placeholder="Teléfono" required>
+            <input type="text" placeholder="Dirección" required>
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+
+</section>
+
+<footer>
+    <h3>Contáctanos</h3>
+    <p>📧 turismo@colombia.com</p>
+    <p>📞 +57 3106875702</p>
+    <p>Dirección: Calle 123 #45-67, Colombia</p>
+</footer>
+
+<nav class="navbar">
+      <a href="#">Inicio</a>
+      <a href="#">Catálogo</a>
+      <a href="#">Registro</a>
+      <a href="#">Reservas</a>
+</nav>
+
 </body>
 </html>

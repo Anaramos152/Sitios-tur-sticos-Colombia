@@ -6,6 +6,7 @@
 }
 
 body {
+  padding-bottom: 90px;
   font-family: 'Poppins', sans-serif;
   background: #ffffff;
   color: #333;
@@ -140,6 +141,26 @@ footer {
   background: #003893;
   color: white;
   margin-top: 50px;
+}
+
+.navbar{
+    position:fixed;
+    bottom:25px;
+    left:50%;
+    transform:translateX(-50%);
+    width:85%;
+    display:flex;
+    justify-content:space-around;
+    padding:1rem;
+    background: #FCD116;
+    backdrop-filter: blur(12px);
+    border-radius:60px;
+}
+
+.navbar a{
+    color: black;
+    text-decoration:none;
+    font-weight:bold;
 }
 
 @media(min-width: 768px) {
