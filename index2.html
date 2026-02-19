@@ -1,137 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Viaja con M-Ana</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/CSS/styles2.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container nav">
-        <h2 class="logo">Viaja con <span>M-Ana</span></h2>
-        <nav>
-          <a href="#hero">Inicio</a>
-          <a href="#regiones">Regiones</a>
-          <a href="#precios">Paquetes</a>
-        </nav>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos Colombia | Agencia Premium</title>
+    <link rel="stylesheet" href="/css/styles2.css">
+</head>
+
+<body>
+    <header class="hero">
+        <h1>Colombia, lo mejor del turismo regional para ti</h1>
+        <a href="#destinos" class="btn-primary">Explorar destinos</a>
     </header>
 
-    <section id="hero">
-      <div class="slide active">
-        <h1>Descubre Cartagena</h1>
-        <p>Historia, mar y cultura caribeña.</p>
-      </div>
-      <div class="slide">
-        <h1>Eje Cafetero</h1>
-        <p>Montañas verdes y aroma a café.</p>
-      </div>
-      <div class="slide">
-        <h1>Nuquí</h1>
-        <p>Avistamiento mágico de ballenas.</p>
-      </div>
-      <div class="slide">
-        <h1>Caño Cristales</h1>
-        <p>El río de los cinco colores.</p>
-      </div>
-      <div class="slide">
-        <h1>Amazonas</h1>
-        <p>Explora la selva más biodiversa del mundo.</p>
-      </div>
+    <section id="destinos" class="accordion-section">
+        <h2 class="section-title">Descubre Colombia</h2>
+
+        <ul class="accordion">
+
+            <li style="background-image: url "IMG/colombia.jpeg" >
+                <div class="content">
+                    <h3>Barranquilla</h3>
+                    <p>Historia, mar y cultura caribeña</p>
+                </div>
+            </li>
+
+            <li style="background-image: url "IMG/colombia.jpeg" >
+                <div class="content">
+                    <h3>Eje Cafetero</h3>
+                    <p>Montañas verdes y aroma a café</p>
+                </div>
+            </li>
+
+            <li style="background-image: url "IMG/colombia.jpeg" >
+                <div class="content">
+                    <h3>Nuquí</h3>
+                    <p>Avistamiento mágico de ballenas</p>
+                </div>
+            </li>
+
+            <li style="background-image: url "IMG/colombia.jpeg">
+                <div class="content">
+                    <h3>Caño Cristales</h3>
+                    <p>El río de los cinco colores</p>
+                </div>
+            </li>
+
+            <li style="background-image: url "IMG/colombia.jpeg">
+                <div class="content">
+                    <h3>Amazonas</h3>
+                    <p>Explora la selva más biodiversa del mundo</p>
+                </div>
+            </li>
+
+            <li style="background-image: url "IMG/colombia.jpeg">
+                <div class="content">
+                    <h3>Huila</h3>
+                    <p>Café y paisajes increíbles</p>
+                </div>
+            </li>
+        </ul>
     </section>
 
-    <section id="regiones" class="container">
-      <h2>Regiones de Colombia</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Caribe</h3>
-          <p>Cartagena de Indias</p>
+    <section class="hotel-section">
+        <h2 class="section-title">Hoteles Recomendados</h2>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hotel</th>
+                        <th>Ubicación</th>
+                        <th>Estrellas</th>
+                        <th>Precio/Noche</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hotel Caribe Real</td>
+                        <td>Barranquilla</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>$320.000</td>
+                        <td>
+                            <a href="#" class="btn">Reservar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Finca Aroma Café</td>
+                        <td>Eje Cafetero</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>$450.000</td>
+                        <td>
+                            <a href="#" class="btn">Reservar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Eco Lodge Pacífico</td>
+                        <td>Nuquí</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>$390.000</td>
+                        <td>
+                            <a href="#" class="btn">Reservar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="card">
-          <h3>Andina</h3>
-          <p>Eje Cafetero</p>
-        </div>
-        <div class="card">
-          <h3>Pacífica</h3>
-          <p>Nuquí - Ballenas</p>
-        </div>
-        <div class="card">
-          <h3>Orinoquía</h3>
-          <p>Caño Cristales</p>
-        </div>
-        <div class="card">
-          <h3>Amazonía</h3>
-          <p>Leticia y Río Amazonas</p>
-        </div>
-      </div>
     </section>
 
-    <section id="precios" class="container">
-      <h2>Paquetes Turísticos</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Plan</th>
-            <th>Incluye</th>
-            <th>Precio</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Económico</td>
-            <td>Hotel 3★ + Tours básicos</td>
-            <td>$1.200.000</td>
-            <td><button>Reservar</button></td>
-          </tr>
-          <tr>
-            <td>Premium</td>
-            <td>Hotel 4★ + Tours + Transporte</td>
-            <td>$2.500.000</td>
-            <td><button>Reservar</button></td>
-          </tr>
-          <tr>
-            <td>VIP</td>
-            <td>Hotel 5★ + Experiencia completa</td>
-            <td>$4.800.000</td>
-            <td><button>Reservar</button></td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+    <nav class="nav-bottom">
+        <a href="#">Inicio</a>
+        <a href="#">Catálogo</a>
+        <a href="#">Registro</a>
+        <a href="#">Reservas</a>
+    </nav>
 
-    <footer>
-      <footer>
-      <h3>Contáctanos</h3>
-      <p>📧 turismo@colombia.com</p>
-      <p>📞 +57 3106875702</p>
-      <p>Dirección: Calle 123 #45-67, Colombia</p>
-      </footer>
-    </footer>
-
-    <nav class="navbar">
-      <a href="#">Inicio</a>
-      <a href="#">Catálogo</a>
-      <a href="#">Registro</a>
-      <a href="#">Reservas</a>
-</nav>
-
-    <script>
-      let slides = document.querySelectorAll(".slide");
-      let index = 0;
-
-      function showSlide() {
-        slides.forEach((slide) => slide.classList.remove("active"));
-        slides[index].classList.add("active");
-        index = (index + 1) % slides.length;
-      }
-
-      setInterval(showSlide, 4000);
-    </script>
-  </body>
+</body>
 </html>
