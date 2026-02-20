@@ -189,7 +189,7 @@ footer{
     display:flex;
     justify-content:space-around;
     padding:1rem;
-    background: rgba(165,56,96,0.9);
+    background: #8f1d3f;
     backdrop-filter: blur(12px);
     border-radius:60px;
 }
@@ -197,6 +197,10 @@ footer{
     color:#f0dbbd;
     text-decoration:none;
     font-weight:bold;
+}
+
+.navbar a:hover {
+    color: #b4405d;
 }
 
 .reveal{

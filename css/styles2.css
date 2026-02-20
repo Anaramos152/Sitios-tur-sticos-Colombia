@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +9,7 @@ body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
     background: #d8c3a5;
     color: #4a1c2a;
-    padding-bottom: 120px;
-    min-height: 100vh;
+    padding-bottom: 80px; 
 }
 
 .wrapper {
@@ -17,12 +17,10 @@ body {
     place-items: center;
     padding: 40px 20px;
     gap: 50px;
-    width: 100%;
 }
 
 h1, .section-title {
     color: #6d0f2c;
-    text-align: center;
 }
 
 .accordion {
@@ -69,6 +67,7 @@ h1, .section-title {
     transform: translateY(0);
 }
 
+
 .hotel-section {
     width: 100%;
     max-width: 1000px;
@@ -77,7 +76,6 @@ h1, .section-title {
 
 .table-container {
     overflow-x: auto;
-    width: 100%;
 }
 
 table {
@@ -87,7 +85,6 @@ table {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    min-width: 600px;
 }
 
 thead {
@@ -97,7 +94,6 @@ thead {
 
 th, td {
     padding: 15px;
-    text-align: center;
 }
 
 tbody tr:nth-child(even) {
@@ -115,7 +111,6 @@ tbody tr:hover {
     text-decoration: none;
     border-radius: 25px;
     transition: 0.3s;
-    display: inline-block;
 }
 
 .btn:hover {
@@ -166,24 +161,22 @@ tbody tr:hover {
     font-size: 13px;
 }
 
-.nav-bottom {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 700px;
+.navbar{
+    position:fixed;
+    bottom:25px;
+    left:50%;
+    transform:translateX(-50%);
+    width:85%;
+    display:flex;
+    justify-content:space-around;
+    padding:1rem;
     background: #8f1d3f;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 15px 0;
-    border-radius: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    z-index: 1000;
+    backdrop-filter: blur(12px);
+    border-radius:60px;
+    
 }
 
-.nav-bottom a {
+.navbar a {
     color: white;
     text-decoration: none;
     font-weight: 500;
@@ -196,22 +189,7 @@ tbody tr:hover {
 
 @media (max-width: 1024px) {
     .accordion {
-        height: 380px;
-    }
-
-    .wrapper {
-        padding: 40px 20px;
-        gap: 50px;
-    }
-}
-@media (max-width: 1024px) {
-    .accordion {
-        height: 380px;
-    }
-
-    .wrapper {
-        padding: 40px 20px;
-        gap: 50px;
+        height: 350px;
     }
 }
 
@@ -223,7 +201,7 @@ tbody tr:hover {
     }
 
     .accordion li {
-        height: 220px;
+        height: 200px;
         flex: none;
     }
 
@@ -237,25 +215,18 @@ tbody tr:hover {
     }
 
     table {
-        min-width: 550px;
-    }
-
-    .nav-bottom {
-        gap: 25px;
-        padding: 15px;
-        border-radius: 30px;
+        min-width: 500px;
     }
 }
 
 @media (max-width: 600px) {
-
     body {
-        padding-bottom: 170px;
+        padding-bottom: 140px;
     }
 
     .wrapper {
-        padding: 30px 15px;
-        gap: 35px;
+        padding: 20px 15px;
+        gap: 30px;
     }
 
     .accordion li {
@@ -264,41 +235,25 @@ tbody tr:hover {
 
     th, td {
         padding: 10px;
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .nav-bottom {
         width: 95%;
-        gap: 18px;
-        padding: 12px;
+        padding: 12px 0;
     }
 
     .nav-bottom a {
-        font-size: 13px;
+        font-size: 14px;
     }
 }
 
 @media (min-width: 1600px) {
+    .accordion {
+        height: 500px;
+    }
 
     .wrapper {
-        max-width: 1700px;
-        gap: 90px;
-    }
-
-    .accordion {
-        height: 550px;
-    }
-
-    table {
-        font-size: 18px;
-    }
-
-    .nav-bottom {
-        max-width: 1000px;
-        padding: 25px 40px;
-    }
-
-    .nav-bottom a {
-        font-size: 20px;
+        gap: 80px;
     }
 }

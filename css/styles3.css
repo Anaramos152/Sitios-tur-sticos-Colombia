@@ -116,9 +116,13 @@ footer p{
 }
 
 .navbar a{
-    color:black;
+    color:white;
     text-decoration:none;
     font-weight:bold;
+}
+
+.navbar a:hover {
+    color: #7bd389;
 }
 
 @media(max-width:768px){
