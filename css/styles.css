@@ -214,32 +214,46 @@ footer{
 
 @media(max-width:768px){
 
+    .navbar{
+        width: 92%;
+        flex-wrap: wrap;
+        justify-content: center ;
+        gap: 0.8rem;
+        padding: 1rem 0.5rem;
+    }
+
     .stats{
         flex-direction:column;
         gap:2rem;
     }
 
+    body{
+        overflow-x: hidden; 
+    }
+
     .carousel{
-        height:320px;
-        perspective:1000px;
+        width:100%;
+        height:260px;
+        padding:1rem;
+        overflow:hidden; 
     }
 
     .carousel-track{
-        width:300px;
-        height:180px;
-        animation:rotate 22s infinite linear;
+        width:90vw;
+        max-width:300px;  
+        height:160px;
     }
 
     .carousel-track img{
-        transition: transform 0.5s ease, escala 0.5s ease;
-        width:300px;
-        height:180px;
+        width:100%;
+        height:160px;
+        object-fit:cover;
     }
 
-    .carousel-track img:nth-child(1){transform:rotateY(0deg) translateZ(380px);}
-    .carousel-track img:nth-child(2){transform:rotateY(60deg) translateZ(380px);}
-    .carousel-track img:nth-child(3){transform:rotateY(120deg) translateZ(380px);}
-    .carousel-track img:nth-child(4){transform:rotateY(180deg) translateZ(380px);}
-    .carousel-track img:nth-child(5){transform:rotateY(240deg) translateZ(380px);}
-    .carousel-track img:nth-child(6){transform:rotateY(300deg) translateZ(380px);}
+    .carousel-track img:nth-child(1){transform:rotateY(0deg) translateZ(300px);}
+    .carousel-track img:nth-child(2){transform:rotateY(60deg) translateZ(300px);}
+    .carousel-track img:nth-child(3){transform:rotateY(120deg) translateZ(300px);}
+    .carousel-track img:nth-child(4){transform:rotateY(180deg) translateZ(300px);}
+    .carousel-track img:nth-child(5){transform:rotateY(240deg) translateZ(300px);}
+    .carousel-track img:nth-child(6){transform:rotateY(300deg) translateZ(300px);}
 }
