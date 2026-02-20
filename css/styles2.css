@@ -69,10 +69,6 @@ h1, .section-title {
     transform: translateY(0);
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 2a8e95c9e7a4feddac6e86a3809076de0676b715
 .hotel-section {
     width: 100%;
     max-width: 1000px;
@@ -200,18 +196,34 @@ tbody tr:hover {
 
 @media (max-width: 1024px) {
     .accordion {
-        height: 350px;
+        height: 380px;
+    }
+
+    .wrapper {
+        padding: 40px 20px;
+        gap: 50px;
+    }
+}
+@media (max-width: 1024px) {
+    .accordion {
+        height: 380px;
+    }
+
+    .wrapper {
+        padding: 40px 20px;
+        gap: 50px;
     }
 }
 
 @media (max-width: 900px) {
+
     .accordion {
         flex-direction: column;
         height: auto;
     }
 
     .accordion li {
-        height: 200px;
+        height: 220px;
         flex: none;
     }
 
@@ -221,21 +233,29 @@ tbody tr:hover {
 
     .content {
         transform: translateY(0);
+        background: rgba(109,15,44,0.85);
     }
 
     table {
-        min-width: 500px;
+        min-width: 550px;
+    }
+
+    .nav-bottom {
+        gap: 25px;
+        padding: 15px;
+        border-radius: 30px;
     }
 }
 
 @media (max-width: 600px) {
+
     body {
-        padding-bottom: 140px;
+        padding-bottom: 170px;
     }
 
     .wrapper {
-        padding: 20px 15px;
-        gap: 30px;
+        padding: 30px 15px;
+        gap: 35px;
     }
 
     .accordion li {
@@ -244,25 +264,41 @@ tbody tr:hover {
 
     th, td {
         padding: 10px;
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .nav-bottom {
         width: 95%;
-        padding: 12px 0;
+        gap: 18px;
+        padding: 12px;
     }
 
     .nav-bottom a {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
 @media (min-width: 1600px) {
-    .accordion {
-        height: 500px;
-    }
 
     .wrapper {
-        gap: 80px;
+        max-width: 1700px;
+        gap: 90px;
+    }
+
+    .accordion {
+        height: 550px;
+    }
+
+    table {
+        font-size: 18px;
+    }
+
+    .nav-bottom {
+        max-width: 1000px;
+        padding: 25px 40px;
+    }
+
+    .nav-bottom a {
+        font-size: 20px;
     }
 }
