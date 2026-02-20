@@ -186,15 +186,13 @@ footer{
     left:50%;
     transform:translateX(-50%);
     width:85%;
-    max-width:800px;
     display:flex;
     justify-content:space-around;
     padding:1rem;
-    background:rgba(165,56,96,0.9);
-    backdrop-filter:blur(12px);
+    background: rgba(165,56,96,0.9);
+    backdrop-filter: blur(12px);
     border-radius:60px;
 }
-
 .navbar a{
     color:#f0dbbd;
     text-decoration:none;
