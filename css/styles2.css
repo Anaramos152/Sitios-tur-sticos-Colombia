@@ -1,4 +1,4 @@
-
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -6,66 +6,43 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #d9c3a3;
-    color: #3b1c24;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    padding-bottom: 70px; /* espacio para navbar fija */
 }
 
-
-.hero {
-    text-align: center;
-    padding: 60px 20px;
+/* WRAPPER */
+.wrapper {
+    display: grid;
+    place-items: center;
+    padding: 40px;
+    gap: 40px;
 }
 
-.hero h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #8f2749;
-    margin-bottom: 25px;
-}
-
-.btn-primary {
-    display: inline-block;
-    padding: 12px 28px;
-    border-radius: 30px;
-    background: linear-gradient(135deg, #c94f73, #a63d61);
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.btn-primary:hover {
-    transform: translateY(-3px);
-}
-
-/* SECCIÓN */
-.accordion-section {
-    padding: 40px 20px;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 1.5rem;
+/* TITULO */
+h1 {
     color: #6d0f2c;
-    margin-bottom: 25px;
 }
+
+/* =========================
+   ACORDEÓN
+========================= */
 
 .accordion {
     list-style: none;
     display: flex;
-    height: 300px;
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
     overflow: hidden;
-    border-radius: 25px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
 }
 
 .accordion li {
     flex: 1;
-    background-size: cover;
-    background-position: center;
     position: relative;
-    transition: flex 0.5s ease;
+    transition: 0.5s ease;
     cursor: pointer;
 }
 
@@ -73,100 +50,41 @@ body {
     flex: 3;
 }
 
-.accordion .content {
+.accordion img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
     position: absolute;
     bottom: 0;
     width: 100%;
     padding: 20px;
-    background: linear-gradient(to top, rgba(109, 15, 44, 0.9), rgba(109, 15, 44, 0.2));
-    color: #ffffff;
+    background: linear-gradient(to top, rgba(109,15,44,0.9), transparent);
+    color: white;
+    transform: translateY(100%);
+    transition: 0.4s;
 }
+
+.accordion li:hover .content {
+    transform: translateY(0);
+}
+
+/* =========================
+   TABLA HOTELES
+========================= */
 
 .hotel-section {
-    padding: 20px;
-}
-
-table {
     width: 100%;
-    border-collapse: collapse;
-    background-color: #ffffff;
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-thead {
-    background-color: #6d0f2c;
-    color: #ffffff;
-}
-
-th,
-td {
-    padding: 14px;
+    max-width: 1000px;
     text-align: center;
 }
 
-tbody tr:nth-child(even) {
-    background-color: #f3e6da;
-}
-
-.btn {
-    padding: 6px 14px;
-    border-radius: 20px;
-    background-color: #8f2749;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 0.8rem;
-}
-
-.btn:hover {
-    background-color: #6d0f2c;
-}
-
-.nav-bottom {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 18px;
-    margin: 40px auto;
-    width: 60%;
-    background-color: #8f2749;
-    border-radius: 30px;
-}
-
-.nav-bottom a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 600;
-}
-
-.nav-bottom a:hover {
-    opacity: 0.7;
-}
-
-@media (max-width: 768px) {
-
-    .accordion {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .accordion li {
-        height: 200px;
-    }
-
-    .accordion li:hover {
-        flex: 1;
-    }
-
-    .nav-bottom {
-        width: 90%;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-}
-
-.hotel-section {
-    padding: 20px;
+.section-title {
+    margin-bottom: 20px;
+    color: #6d0f2c;
 }
 
 .table-container {
@@ -176,67 +94,71 @@ tbody tr:nth-child(even) {
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: var(--white);
+    background: white;
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 thead {
-    background-color: var(--primary-dark);
-    color: var(--white);
+    background: #6d0f2c;
+    color: white;
 }
 
-th,
-td {
-    padding: 14px;
-    text-align: center;
+th, td {
+    padding: 15px;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f3e6da;
+    background: #f7f7f7;
+}
+
+tbody tr:hover {
+    background: #ffe5ec;
 }
 
 .btn {
-    padding: 6px 14px;
-    border-radius: 20px;
-    background-color: var(--primary-medium);
-    color: var(--white);
+    padding: 8px 15px;
+    background: #6d0f2c;
+    color: white;
     text-decoration: none;
-    font-size: 0.8rem;
-    transition: 0.3s ease;
+    border-radius: 20px;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background-color: var(--primary-dark);
+    background: #a4161a;
 }
 
-
+/* =========================
+   🔥 NAVBAR INFERIOR
+========================= */
 
 .nav-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #6d0f2c;
     display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 18px;
-    margin: 40px auto;
-    width: 60%;
-    background-color: var(--primary-medium);
-    border-radius: 30px;
+    justify-content: space-around;
+    padding: 15px 0;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.2);
 }
 
 .nav-bottom a {
+    color: white;
     text-decoration: none;
-    color: var(--white);
-    font-weight: 600;
-    transition: 0.3s ease;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .nav-bottom a:hover {
-    opacity: 0.7;
+    color: #ffd6e0;
 }
 
-
-@media (max-width: 768px) {
-
+/* RESPONSIVE */
+@media (max-width: 900px) {
     .accordion {
         flex-direction: column;
         height: auto;
@@ -246,14 +168,7 @@ tbody tr:nth-child(even) {
         height: 200px;
     }
 
-    .accordion li:hover {
-        flex: 1;
+    .content {
+        transform: translateY(0);
     }
-
-    .nav-bottom {
-        width: 90%;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-
 }
