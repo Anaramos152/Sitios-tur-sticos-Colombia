@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #A5D6A7, #66BB6A);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 20px 30px 20px;
+    color: #1B5E20;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.header p {
+    font-size: 1rem;
+    color: #2E7D32;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 30px 20px 80px 20px;
+}
+
+.card {
+    background: #F1F8E9;
+    width: 320px;
+    padding: 35px 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1B5E20;
+}
+
+.card input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #66BB6A;
+    font-size: 14px;
+    background: #ffffff;
+    transition: 0.3s ease;
+}
+
+.card input:focus {
+    border-color: #2E7D32;
+    outline: none;
+    box-shadow: 0 0 6px rgba(46, 125, 50, 0.3);
+}
+
+.card button {
+    width: 100%;
+    padding: 12px;
+    background: #2E7D32;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.card button:hover {
+    background: #1B5E20;
+}
+
+.footer {
+    background: #1B5E20;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.nav-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #2E7D32;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+.nav-bottom a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.nav-bottom a:hover {
+    color: #C8E6C9;
+}
+
+.nav-bottom a.active {
+    border-bottom: 2px solid #ffffff;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .nav-bottom {
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px 0;
+    }
+}
+@media (max-width: 600px) {
+    body {
+        padding-bottom: 120px;
+    }
+
+    .header {
+        padding: 35px 15px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+    }
+
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 20px 15px 100px 15px;
+    }
+
+    .card {
+        width: 95%;
+        padding: 25px 20px;
+    }
+
+    .card h2 {
+        font-size: 1.2rem;
+    }
+
+    .card input {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .card button {
+        padding: 11px;
+        font-size: 14px;
+    }
+
+    .nav-bottom {
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px 0;
+    }
+
+    .nav-bottom a {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1600px) {
+    .main-container {
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .card {
+        width: 340px;
+    }
+}
+
+@media (min-width: 1601px) {
+    body {
+        background: linear-gradient(135deg, #A5D6A7, #2E7D32);
+    }
+
+    .header h1 {
+        font-size: 3.5rem;
+    }
+
+    .header p {
+        font-size: 1.3rem;
+    }
+
+    .main-container {
+        gap: 120px;
+        padding: 80px 0 140px 0;
+    }
+
+    .card {
+        width: 450px;
+        padding: 50px 40px;
+    }
+
+    .card h2 {
+        font-size: 1.8rem;
+    }
+
+    .card input {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .card button {
+        padding: 15px;
+        font-size: 17px;
+    }
+
+    .nav-bottom {
+        padding: 20px 0;
+    }
+
+    .nav-bottom a {
+        font-size: 18px;
+    }
+
+    .footer {
+        font-size: 18px;
+        padding: 40px;
+    }
+}
